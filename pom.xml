@@ -47,6 +47,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 			</plugin>
 			<!-- This plugin is used to create a Docker image and publish it to Docker hub-->
 			<plugin>
@@ -54,9 +55,13 @@
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.13</version>
 				<configuration>
+					<!-- Establece el nombre del repositorio remoto. Aquí usamos una variable predefinida
+						 llamado docker.image.prefix y el proyecto.artefactId. -->
 					<repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
+						<!-- Establece la ubicación del archivo JAR usando <construirArgs>.
+						     Este valor se utiliza en el Dockerfile. -->
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
 					</buildArgs>
 				</configuration>
@@ -75,6 +80,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${project.parent.version}</version>
 				<configuration>
 					<layers>
 						<enabled>true</enabled>
