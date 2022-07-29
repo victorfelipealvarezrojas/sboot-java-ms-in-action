@@ -69,7 +69,7 @@ crear imágenes de Docker usando desde la version Spring Boot v2.3...
 produce durante la fase de arranque del microservicio.
 la figura  muestra el ciclo de vida del microservicio.
 > 
-> ![](../licensing-service/public/images/architecturecinfigurationmanagement.png)
+> ![](../../public/images/architecturecinfigurationmanagement.png)
 >
 > la gestión de configuración de aplicaciones estableciendo
   cuatro principios que queremos seguir:
