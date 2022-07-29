@@ -101,7 +101,7 @@ la figura  muestra el ciclo de vida del microservicio.
   la figura presenta el proceso de arranque con más detalle y muestra cómo un servicio de configuración
   juega un papel fundamental en este paso.
 > 
-> ![](/home/tomate/Escritorio/fuentes/java/licensing-service/public/images/imagen2.png)
+> ![](./public/images/imagen2.png)
 > 
 > 1 Cuando aparece una instancia de microservicio, llama a un punto final de servicio para leer su
 información de configuración, que es específica para el entorno en el que está operando
@@ -127,8 +127,8 @@ copia de los datos de la solicitud.
 > 
 > # Opciones de implementación
 > 
-> ![](/home/tomate/Escritorio/fuentes/java/licensing-service/public/images/imagen3.png)
-> ![](/home/tomate/Escritorio/fuentes/java/licensing-service/public/images/imagen4.png)
+> ![](./public/images/imagen3.png)
+> ![](./public/images/imagen4.png)
 > 
 > 
 > Todas las soluciones de la tabla se pueden utilizar fácilmente para crear una gestión de configuración
