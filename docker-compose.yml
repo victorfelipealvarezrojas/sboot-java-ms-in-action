@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  licensingservice:
+    image: licensing-service:latest
+    ports:
+      - "8080:8080"
+    environment:
+      # entregan valores a las propiedades resources/bootstrap.yml en caso de queres modificar las que ahi se definen
+      SPRING_PROFILES_ACTIVE: "dev"
+      SPRING_CLOUD_CONFIG_URI:  http://configserver:8071
+  configserver:
+    image: configserver:latest
+    ports:
+      - "8071:8071"
